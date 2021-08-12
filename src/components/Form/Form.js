@@ -135,7 +135,7 @@ const Form = ({ currentId, setCurrentId }) => {
           <FormControlLabel value="true" control={<Radio />} label="Sold" />
         </RadioGroup> */}
 
-        <Button
+        {currentId && (<Button
           className={classes.buttonChange}
           variant="contained"
           // color="primary"
@@ -147,7 +147,7 @@ const Form = ({ currentId, setCurrentId }) => {
           spacing={2}
         >
           Mark As Sold
-        </Button>
+        </Button>) }
 
         <Button
           className={classes.buttonSubmit}
